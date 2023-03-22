@@ -1,4 +1,4 @@
-package String;
+
 
 public class toUppercase {
     public static String toUppercase (String str) {

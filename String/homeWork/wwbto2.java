@@ -1,4 +1,4 @@
-package String.homeWork;
+package homeWork;
 
 public class wwbto2 {
     public static void main(String[] args) {

@@ -6,9 +6,9 @@ public class test111 {
     public static void sort(int[] arr){
         int a = arr.length;
         for(int i=0; i<a;i++){
-            if (a[i] < a[]){
+            // if (a[i] < a[]){
 
-            }
+            // }
         }
         
     }
