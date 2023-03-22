@@ -1,60 +1,60 @@
-package anmolTasks;
+// package anmolTasks;
 
 
-import java.util.*;
+// import java.util.*;
 
-public class loopInLL {
+// public class loopInLL {
 
-	static Node head; 
-	static class Node {
-		int data;
-		Node next;
-		Node(int d)
-		{
-			data = d;
-			next = null;
-		}
-	}
+// 	static Node head; 
+// 	static class Node {
+// 		int data;
+// 		Node next;
+// 		Node(int d)
+// 		{
+// 			data = d;
+// 			next = null;
+// 		}
+// 	}
 
 	
-	static public void push(int new_data)
-	{
-		Node new_node = new Node(new_data);
+// 	static public void push(int new_data)
+// 	{
+// 		Node new_node = new Node(new_data);
 
-		new_node.next = head;
+// 		new_node.next = head;
 
-		head = new_node;
-	}
-	static boolean detectLoop(Node h)
-	{
-		HashSet<Node> s = new HashSet<Node>();
-		while (h != null) {
-			if (s.contains(h))
-				return true;
+// 		head = new_node;
+// 	}
+// 	static boolean detectLoop(Node h)
+// 	{
+// 		HashSet<Node> s = new HashSet<Node>();
+// 		while (h != null) {
+// 			if (s.contains(h))
+// 				return true;
 
-			s.add(h);
+// 			s.add(h);
 
-			h = h.next;
-		}
+// 			h = h.next;
+// 		}
 
-		return false;
-	}
+// 		return false;
+// 	}
 
-	public static void main(String[] args)
-	{
-		LinkedList llist = new LinkedList();
+// 	public static void main(String[] args)
+// 	{
+// 		LinkedList llist = new LinkedList();
 
-		llist.push(20);
-		llist.push(4);
-		llist.push(15);
-		llist.push(10);
+// 		llist.push(20);
+// 		llist.push(4);
+// 		llist.push(15);
+// 		llist.push(10);
 
-		llist.head.next.next.next.next = llist.head;
+// 		llist.head.next.next.next.next = llist.head;
 
-		if (detectLoop(head))
-			System.out.println("Loop Found");
-		else
-			System.out.println("No Loop");
-	}
-}
+// 		if (detectLoop(head))
+// 			System.out.println("Loop Found");
+// 		else
+// 			System.out.println("No Loop");
+// 	}
+// }
 
