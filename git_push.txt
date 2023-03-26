@@ -9,3 +9,6 @@ how to change branch ---
 
 to change to master or some other branch 
 *git switch master    --{instead of master you put any existing branch name} 
+
+
+cut this line from here
