@@ -1,4 +1,4 @@
-package tree;
+package tree;                                // O(N)
 
 public class BTpreorder {
     static class Node {
