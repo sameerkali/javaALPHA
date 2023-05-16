@@ -9,7 +9,7 @@ public class allPattern {
     System.out.print("Number:");
     Scanner s = new Scanner(System.in);
     n = s.nextInt();
-    pattern1(n, m);
+    pattern6(n);
   }
 
   // ----------------------------------------------------------------------------//
@@ -339,73 +339,73 @@ public class allPattern {
   // 1
   // ----------------------------------------------------------------------------//
 
-  // public static void pattern6(int n) {
-  // for (int i = 1; i <= n; i++) {
-  // for (int j = n; j >= i; j--) {
-  // System.out.print(j);
-  // }
-  // System.out.println();
-  // }
-  // }
-  // 4321
-  // 432
-  // 43
-  // 4
+  public static void pattern6(int n) {
+    for (int i = 1; i <= n; i++) {
+      for (int j = n; j >= i; j--) {
+        System.out.print(j);
+      }
+      System.out.println();
+    }
+  }
+  //   4321
+  //   432
+  //   43
+  //   4
   // ----------------------------------------------------------------------------//
 
-  // public static void pattern5(int row, int col) {
-  // for (int i = 1; i <= row; i++) {
-  // for (int j = 1; j <= row-i; j++) {
-  // System.out.print(' ');
-  // }
-  // for (int j = 1; j <= i; j++) {
-  // System.out.print('*');
-  // }
-  // System.out.println();
-  // }
-  // }
-  // *
-  // **
-  // ***
-  // ****
+  //   public static void pattern5(int row) {
+  //     for (int i = 1; i <= row; i++) {
+  //       for (int j = 1; j <= row - i; j++) {
+  //         System.out.print(' ');
+  //       }
+  //       for (int j = 1; j <= i; j++) {
+  //         System.out.print('*');
+  //       }
+  //       System.out.println();
+  //     }
+  //   }
+
+  //     *
+  //    **
+  //   ***
+  //  ****
   // *****
   // ----------------------------------------------------------------------------//
 
-  // public static void pattern4(int row, int col) {
-  // for (int i = 1; i <= row; i++) {
-  // for (int j = 1; j <= col; j++) {
-  // if(i==1 || i==row || j==1 || j==col){
-  // System.out.print('+');
-  // }else{
-  // System.out.print(' ');
-  // }
-  // }
-  // System.out.println();
-  // }
-  // }
+  //   public static void pattern4(int row, int col) {
+  //     for (int i = 1; i <= row; i++) {
+  //       for (int j = 1; j <= col; j++) {
+  //         if (i == 1 || i == row || j == 1 || j == col) {
+  //           System.out.print('+');
+  //         } else {
+  //           System.out.print(' ');
+  //         }
+  //       }
+  //       System.out.println();
+  //     }
+  //   }
   // +++++
   // + +
   // + +
   // +++++
   // ----------------------------------------------------------------------------//
 
-  // public static void pattern3(int n) {
-  // char ch = 'a';
-  // for (int i = 1; i <= n; i++) {
-  // for (int j = 1; j <= i; j++) {
-  // System.out.print(ch);
-  // ch++;
-  // }
-  // System.out.println();
-  // }
-  // }
-  // A
-  // BC
-  // DEF
-  // GHIJ
-  // KLMNO
+  //   public static void pattern3(int n) {
+  //     char ch = 'a';
+  //     for (int i = 1; i <= n; i++) {
+  //       for (int j = 1; j <= i; j++) {
+  //         System.out.print(ch);
+  //         ch++;
+  //       }
+  //       System.out.println();
+  //     }
+  //   }
+  //   A
+  //   BC
+  //   DEF
+  //   GHIJ
+  //   KLMNO
   // ----------------------------------------------------------------------------//
-
   // public static void pattern2(int n) {
   // for (int i = 1; i <= n; i++) {
   // for (int j = 1; j <= i; j++) {
@@ -415,19 +415,18 @@ public class allPattern {
   // }
   // }
   // ----------------------------------------------------------------------------//
-
-  public static void pattern1(int n, int count) {
-    for (int i = 1; i <= n; i++) {
-      count++;
-      for (int j = 1; j <= i; j++) {
-        System.out.print(count);
-      }
-      System.out.println();
-    }
-  }
+  //   public static void pattern1(int n, int count) {
+  //     for (int i = 1; i <= n; i++) {
+  //       count++;
+  //       for (int j = 1; j <= i; j++) {
+  //         System.out.print(count);
+  //       }
+  //       System.out.println();
+  //     }
+  //   }
+  // 1
+  // 22
+  // 333
+  // 4444
+  // 55555
 }
-// 1
-// 22
-// 333
-// 4444
-// 55555
