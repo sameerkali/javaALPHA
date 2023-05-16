@@ -9,7 +9,7 @@ public class allPattern {
     System.out.print("Number:");
     Scanner s = new Scanner(System.in);
     n = s.nextInt();
-    pattern6(n);
+    pattern13(n);
   }
 
   // ----------------------------------------------------------------------------//
@@ -44,20 +44,17 @@ public class allPattern {
   //         }
   // ----------------------------------------------------------------------------//
 
-  //     public static void pattern15(int n) {
-  //         for (int i = 1; i <= n; i++) {
-  //             for (int j = 1; j <=(n-i)+1; j++)
-  //                 System.out.print(" ");
+  public static void pattern15(int n) {
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= (n - i) + 1; j++) System.out.print(" ");
 
-  //             for (int j = 1; j <=i; j++)
-  //                 System.out.print(j);
+      for (int j = 1; j <= i; j++) System.out.print(j);
 
-  //                 for (int j = i-1; j >= 1; j--)
-  //                 System.out.print(j);
+      for (int j = i - 1; j >= 1; j--) System.out.print(j);
 
-  //             System.out.println();
-  //         }
-  //     }
+      System.out.println();
+    }
+  }
 
   //      1
   //     121
@@ -156,28 +153,31 @@ public class allPattern {
   // ----------------------------------------------------------------------------//
 
   //   public static void pattern13(int n) {
-  //             for (int i = 1; i <= n; i++) {
-  //                 for (int j = 1; j <= n-i; j++) {
-  //                     System.out.print(" ");
-  //                     }
+  //     for (int i = 1; i <= n; i++) {
+  //       for (int j = 1; j <= n - i; j++) {
+  //         System.out.print(" ");
+  //       }
 
-  //                 for (int j = 1; j <= (2*i)-1; j++) {
-  //                 System.out.print("*");
-  //                 }
-  //                 System.out.println();
-  //             }
-  //             for (int i = n-1; i >= 1; i--) {
-  //                 for (int j = 1; j <= n-i; j++) {
-  //                     System.out.print(" ");
-  //                     }
+  //       for (int j = 1; j <= (2 * i) - 1; j++) {
+  //         System.out.print("*");
+  //       }
+  //       System.out.println();
+  //     }
 
-  //                 for (int j = 1; j <= (2*i)-1; j++) {
-  //                 System.out.print("*");
-  //                 }
-  //                 System.out.println();
-  //             }
-  //         }
+  //     for (int i = n - 1; i >= 1; i--) {
+  //       for (int j = 1; j <= n - i; j++) {
+  //         System.out.print(" ");
+  //       }
+
+  //       for (int j = 1; j <= (2 * i) - 1; j++) {
+  //         System.out.print("*");
+  //       }
+  //       System.out.println();
+  //     }
+  //   }
+
   //for print odd number's -- (2*i)-1
+
   //      *
   //     ***
   //    *****
@@ -190,22 +190,24 @@ public class allPattern {
   //      *
   // ----------------------------------------------------------------------------//
 
-  // public static void pattern12(int n) {
-  //             for (int i = 1; i <= n; i++) {
+  //   public static void pattern12(int n) {
+  //     for (int i = 1; i <= n; i++) {
+  //       for (int j = 1; j <= n - i; j++) {
+  //         System.out.print(" ");
+  //       }
 
-  //                 for (int j = 1; j <= n-i; j++) {
-  //                 System.out.print(" ");
-  //                 }
-  //                 for (int j = 1; j <= n; j++) {
-  //                     if(i==1 || j==1 || i == n || j==n){
-  //                         System.out.print("*");
-  //                     }else{
-  //                         System.out.print(" ");
-  //                     }
-  //                     }
-  //                 System.out.println();
-  //             }
+  //       for (int j = 1; j <= n; j++) {
+  //         if (i == 1 || j == 1 || i == n || j == n) {
+  //           System.out.print("*");
+  //         } else {
+  //           System.out.print(" ");
   //         }
+  //       }
+
+  //       System.out.println();
+  //     }
+  //   }
+
   //          *****
   //         *   *
   //        *   *
@@ -232,33 +234,34 @@ public class allPattern {
   //  *****
   // ----------------------------------------------------------------------------//
 
-  // public static void pattern11(int n) {
+  //   public static void pattern11(int n) {
   //     for (int i = 1; i <= n; i++) {
-  //         for (int j = 1; j <= i; j++) {
-  //             System.out.print("*");
-  //         }
-  //         for (int j = 1; j <= 2*(n-i); j++) {
-  //             System.out.print(" ");
-  //         }
-  //         for (int j = 1; j <= i; j++) {
-  //             System.out.print("*");
-  //         }
-  //         System.out.println();
+  //       for (int j = 1; j <= i; j++) {
+  //         System.out.print("*");
+  //       }
+  //       for (int j = 1; j <= 2 * (n - i); j++) {
+  //         System.out.print(" ");
+  //       }
+  //       for (int j = 1; j <= i; j++) {
+  //         System.out.print("*");
+  //       }
+  //       System.out.println();
   //     }
 
   //     for (int i = n; i >= 1; i--) {
-  //         for (int j = 1; j <= i; j++) {
-  //             System.out.print("*");
-  //         }
-  //         for (int j = 1; j <= 2*(n-i); j++) {
-  //             System.out.print(" ");
-  //         }
-  //         for (int j = 1; j <= i; j++) {
-  //             System.out.print("*");
-  //         }
-  //         System.out.println();
+  //       for (int j = 1; j <= i; j++) {
+  //         System.out.print("*");
+  //       }
+  //       for (int j = 1; j <= 2 * (n - i); j++) {
+  //         System.out.print(" ");
+  //       }
+  //       for (int j = 1; j <= i; j++) {
+  //         System.out.print("*");
+  //       }
+  //       System.out.println();
   //     }
-  // }
+  //   }
+
   // *    *
   // **  **
   // ******
@@ -267,19 +270,19 @@ public class allPattern {
   // *    *
   // ----------------------------------------------------------------------------//
 
-  // public static void pattern10(int n) {
-  //     for (int i = 1; i <= n; i++) {
-  //         for (int j = 1; j <= i; j++) {
-  //             // if (i ==j || i - j == 2 ) {
-  //             if ((i+j)%2==0) {
-  //                 System.out.print("1"+" ");
-  //             }else{
-  //                 System.out.print("0"+" ");
-  //             }
-  //         }
-  //         System.out.println();
-  //     }
-  // }
+  public static void pattern10(int n) {
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= i; j++) {
+        // if (i ==j || i - j == 2 ) {
+        if ((i + j) % 2 == 0) {
+          System.out.print("1" + " ");
+        } else {
+          System.out.print("0" + " ");
+        }
+      }
+      System.out.println();
+    }
+  }
   // 1
   // 0 1
   // 1 0 1
@@ -287,20 +290,18 @@ public class allPattern {
   // 1 0 1 0 1
   // ----------------------------------------------------------------------------//
 
-  //     public static void pattern9(int n) {
-  //         for (int i = 1; i <= n; i++) {
-  //             for (int j = 1; j <= i; j++) {
-  //                 if (j % 2 == 0) {
-  //                     System.out.print("1");
-  //                 } else {
-  //                     System.out.print("0");
-
-  //                 }
-
-  //             }
-  //             System.out.println();
+  //   public static void pattern9(int n) {
+  //     for (int i = 1; i <= n; i++) {
+  //       for (int j = 1; j <= i; j++) {
+  //         if (j % 2 == 0) {
+  //           System.out.print("1");
+  //         } else {
+  //           System.out.print("0");
   //         }
+  //       }
+  //       System.out.println();
   //     }
+  //   }
   // 0
   // 01
   // 010
@@ -339,14 +340,14 @@ public class allPattern {
   // 1
   // ----------------------------------------------------------------------------//
 
-  public static void pattern6(int n) {
-    for (int i = 1; i <= n; i++) {
-      for (int j = n; j >= i; j--) {
-        System.out.print(j);
-      }
-      System.out.println();
-    }
-  }
+  //   public static void pattern6(int n) {
+  //     for (int i = 1; i <= n; i++) {
+  //       for (int j = n; j >= i; j--) {
+  //         System.out.print(j);
+  //       }
+  //       System.out.println();
+  //     }
+  //   }
   //   4321
   //   432
   //   43
