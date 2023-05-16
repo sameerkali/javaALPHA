@@ -10,7 +10,7 @@ public class findDuplicateNumIn {
     //  int a = sc.nextInt(); 
     int count = 0;
 
-     String[] duplicate = {"sameer","faridi","raheem","golu","sameer", "golu"};
+     String[] duplicate = {"sameer","faridi","raheem","golu","sameer", "golu", "faridi"};
         for (int i = 0; i < duplicate.length; i++) {
             for (int j = i+1; j < duplicate.length; j++) {
                 if(duplicate[i] == duplicate[j]){
