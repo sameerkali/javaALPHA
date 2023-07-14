@@ -5,11 +5,19 @@ import java.util.Scanner;
 public class allPattern {
 
   public static void main(String args[]) {
-    int n;
-    System.out.print("Number:");
-    Scanner s = new Scanner(System.in);
-    n = s.nextInt();
-    pattern16(n);
+    // System.out.print("Number:");
+    // Scanner s = new Scanner(System.in);                               
+    // n = s.nextInt();
+    int n=5;
+    pattern17(n);
+  }
+  public static void pattern17(int n){
+    for (int i = 0; i <= n; i++) {
+      for (int j = n; j >= i; j--) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
   }
 
   // ----------------------------------------------------------------------------//
@@ -355,12 +363,15 @@ public class allPattern {
 
   //   public static void pattern5(int row) {
   //     for (int i = 1; i <= row; i++) {
+
   //       for (int j = 1; j <= row - i; j++) {
   //         System.out.print(' ');
   //       }
+
   //       for (int j = 1; j <= i; j++) {
   //         System.out.print('*');
   //       }
+  
   //       System.out.println();
   //     }
   //   }
