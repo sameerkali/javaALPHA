@@ -28,3 +28,5 @@ public class coin {
     System.out.println();
   }
 }
+
+// add comments in this code
