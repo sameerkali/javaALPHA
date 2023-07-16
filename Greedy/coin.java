@@ -29,4 +29,3 @@ public class coin {
   }
 }
 
-// add comments in this code
