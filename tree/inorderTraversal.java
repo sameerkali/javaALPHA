@@ -91,3 +91,4 @@ public class inorderTraversal {
     tree.inorder(root);
   }
 }
+//this is for strak ( mai bahot thaka hua hu iss lea bas aaj kuchh nhi kia )
