@@ -1,13 +1,17 @@
 package Linked_list;
 
+import Linked_list.linkedlist.Node;
+
 public class linkedlist {
     public static Node head;
     public static Node tail;
     public static int size=0;
 
     public static class Node {
-        int data;
+        public int data;
         Node next;
+        public Object left;
+        public Node right;
 
         public Node(int data) {
             this.data = data;

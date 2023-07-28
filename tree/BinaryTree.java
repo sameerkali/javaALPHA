@@ -4,7 +4,7 @@ import tree.inorderTraversal.Node;
 
 public class BinaryTree {
 
-    public Node buildTree(int[] nodes) {
+    public tree.Node buildTree(int[] nodes) {
         return null;
     }
 
